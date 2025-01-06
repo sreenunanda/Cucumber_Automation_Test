@@ -10,7 +10,6 @@ public class LoginSteps extends TestBase{
 
 	@Given("^Enter the user credentials (.*) and (.*)$")
 	public void loginTest(String username,String password) {
-//		loginPageObjects=new LoginPageObjects(driver);
 		loginPageObjects.login(username, password);
 	}
 	
