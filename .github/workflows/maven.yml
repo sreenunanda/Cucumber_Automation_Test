@@ -31,4 +31,10 @@ jobs:
       working-directory: cucumber
       run: mvn clean test --file pom.xml
 
-  
+    - name: Upload TestNG Reports
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: testng-reports
+        path: cucumber/target/surefire-reports/
+
