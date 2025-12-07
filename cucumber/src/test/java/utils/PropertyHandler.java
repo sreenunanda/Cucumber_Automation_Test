@@ -10,12 +10,6 @@ public class PropertyHandler {
 	static String fileName = "config.properties";
 	private static Properties properties;
 
-	public PropertyHandler(){
-	}
-
-	public void finalize(){
-	}
-
 	public static String getProperty(String key){
 		try{        
 

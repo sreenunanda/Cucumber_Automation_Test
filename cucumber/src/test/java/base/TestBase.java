@@ -36,6 +36,7 @@ public class TestBase {
 	
 	public void end() {
 		driver.quit();
+		System.out.println("browser closed");
 	}
 	
 	
