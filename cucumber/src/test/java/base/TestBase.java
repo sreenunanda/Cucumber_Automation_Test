@@ -15,7 +15,7 @@ public class TestBase {
 
 	public void startBrowser(String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().browserVersion("131").setup();
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 
 		} else if (browser.equalsIgnoreCase("edge")) {
@@ -41,3 +41,4 @@ public class TestBase {
 	
 	
 }
+
